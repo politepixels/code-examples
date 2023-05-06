@@ -1,0 +1,14 @@
+apiVersion: core.k8sgpt.ai/v1alpha1
+kind: K8sGPT
+metadata:
+  name: k8sgpt-sample
+  namespace: default
+spec:
+  model: gpt-3.5-turbo
+  backend: openai
+  noCache: false
+  version: v0.2.9
+  enableAI: true
+  secret:
+    name: k8sgpt-sample-secret
+    key: openai-api-key

@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: local-ai
+data:
+  model.tmpl: |
+    The prompt below is an error message from inside a Kubernetes cluster; create a list of possible solutions and actions a software engineer could take to diagnose and resolve the issue.
+    ### Prompt:
+      {{.Input}}
+    ### Response:

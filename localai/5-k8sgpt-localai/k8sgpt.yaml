@@ -1,0 +1,11 @@
+apiVersion: core.k8sgpt.ai/v1alpha1
+kind: K8sGPT
+metadata:
+  name: k8sgpt-local
+spec:
+  backend: localai
+  model: ggml-gpt4all-l13b-snoozy
+  baseUrl: http://local-ai.default.svc.cluster.local:8080/v1
+  noCache: false
+  version: v0.2.9
+  enableAI: true
